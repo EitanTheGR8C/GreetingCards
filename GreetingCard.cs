@@ -53,7 +53,8 @@ namespace GreetingCards
         {
             return $"Dear " + this.recipient + "," +
                   "\n" + GreetingMsg() + 
-                  "\n" + this.sender;
+                  "\n" + this.sender +
+                  "\n********************************";
         }
     }
 }
