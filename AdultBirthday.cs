@@ -12,19 +12,17 @@ namespace GreetingCards
     internal class AdultBirthday: BirthdayCard
     {
         public AdultBirthday(string recipient, string sender, int age) : base(recipient, sender, age)
-        {
+        {//same as YouthBirthday
         }
 
         // Overrides BirthdayCard.GreetingMsg().
-        // Do NOT copy the first greeting line: call base.GreetingMsg() and add the
-        // second line to its result (use Environment.NewLine to move to a new line).
         // Required result:
         // Happy Birthday! You are <age> today!
         // You haven't changed at all!
         protected override string GreetingMsg()
         {
-            // TODO
-            return "";
+            return base.GreetingMsg() +
+                "\nYou haven't changed at all!";
         }
     }
 }
