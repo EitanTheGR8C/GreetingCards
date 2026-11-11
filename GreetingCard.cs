@@ -15,7 +15,7 @@ namespace GreetingCards
         private string sender;
 
         // Constructor: creates a greeting card from the given parameters.
-        public GreetingCard(string recipient, string sender)
+        public GreetingCard(string recipient, string sender)//if null I chose to have it as an empty string so no need to work with nulls.
         {
             if(recipient != null)
                 this.recipient = recipient;
@@ -27,9 +27,10 @@ namespace GreetingCards
                 this.sender = "";
         }
 
+        // Updates the recipient name.
         public void SetRecipient(string recipient)
         {
-            if (recipient != null)
+            if (recipient != null)//same done for constructor
             {
                 this.recipient = recipient;
             }
@@ -39,11 +40,10 @@ namespace GreetingCards
         // Required result: "Best Greetings!"
         protected virtual string GreetingMsg()
         {
-            // TODO
-            return "";
+            return "Best Greetings!";
         }
 
-        // Returns the whole card. Must CALL GreetingMsg() for the greeting line.
+        // Returns the whole card.
         // Required result:
         // Dear <recipient>,
         // <the greeting from GreetingMsg()>
@@ -51,8 +51,9 @@ namespace GreetingCards
         // ********************************
         public override string ToString()
         {
-            // TODO
-            return "";
+            return $"Dear " + this.recipient + "," +
+                  "\n" + GreetingMsg() + 
+                  "\n" + this.sender;
         }
     }
 }
