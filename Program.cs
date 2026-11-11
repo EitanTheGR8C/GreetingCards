@@ -13,6 +13,7 @@ namespace GreetingCards
         /// Part C note: when you build ManyCards, comment out this Main and uncomment
         /// the Main inside ManyCards.cs (only one Main can be active at a time).
         /// </summary>
+        /*
         static void Main(string[] args)
         {
             // PART A TEST:
@@ -32,5 +33,6 @@ namespace GreetingCards
             Console.WriteLine(card5);
 
         }
+        */
     }
 }
