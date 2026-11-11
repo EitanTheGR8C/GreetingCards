@@ -30,7 +30,7 @@ namespace GreetingCards
         // Updates the recipient name.
         public void SetRecipient(string recipient)
         {
-            if (recipient != null)//same done for constructor
+            if (recipient != null)//same done for constructor -keeps old if null
             {
                 this.recipient = recipient;
             }
