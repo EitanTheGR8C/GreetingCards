@@ -12,7 +12,7 @@ namespace GreetingCards
     internal class WeddingCard : GreetingCard
     {
         // Constructor: the recipient must be "<bride> & <groom>".
-        public WeddingCard(string bride, string groom, string sender): base(bride + " & " + groom, sender)
+        public WeddingCard(string bride, string groom, string sender) : base("", sender)// in base says "", because we we call SetRecipient before creating the obj.
         {
             SetRecipient(bride, groom);//if null must be empry string.
         }
