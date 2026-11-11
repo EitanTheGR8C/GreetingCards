@@ -13,7 +13,8 @@ namespace GreetingCards
     {
         // Constructor: the recipient must be "<bride> & <groom>".
         public WeddingCard(string bride, string groom, string sender): base(bride + " & " + groom, sender)
-        {//empty
+        {
+            SetRecipient(bride, groom);//if null must be empry string.
         }
 
         // Updates the recipient name.
