@@ -25,7 +25,11 @@ namespace GreetingCards
             Console.WriteLine(card3);
 
             // PART B TEST (after you finish part B): create at least one YouthBirthday
-            
+            YouthBirthday card4 = new YouthBirthday("Mila", "Eitan", 15);
+            AdultBirthday card5 = new AdultBirthday("Dad", "Eitan", 45);
+
+            Console.WriteLine(card4);
+            Console.WriteLine(card5);
 
         }
     }
