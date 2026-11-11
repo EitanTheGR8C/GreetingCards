@@ -15,13 +15,18 @@ namespace GreetingCards
         /// </summary>
         static void Main(string[] args)
         {
-            // PART A TEST: create at least one GreetingCard, one BirthdayCard and one
-            // WeddingCard, and print each one with Console.WriteLine.
-            // Every printed card must show: recipient name, greeting, sender name.
+            // PART A TEST:
+            GreetingCard card1 = new GreetingCard("Yossi", "Eitan");
+            BirthdayCard card2 = new BirthdayCard("Ophir", "Eitan", 20);
+            WeddingCard card3 = new WeddingCard("Shmuel", "Ido", "Eitan");
 
+            Console.WriteLine(card1);
+            Console.WriteLine(card2);
+            Console.WriteLine(card3);
 
             // PART B TEST (after you finish part B): create at least one YouthBirthday
-            // and one AdultBirthday, and print each one.
+            
+
         }
     }
 }
