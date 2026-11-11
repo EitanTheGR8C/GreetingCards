@@ -18,8 +18,8 @@ namespace GreetingCards
         {
             if(age > 0)//real age
                 this.age = age;
-            else//if not real age than basic will be 0.
-                this.age = 0;
+            else//if not real age than basic will be 1.
+                this.age = 1;
         }
 
         // Overrides GreetingCard.GreetingMsg().
