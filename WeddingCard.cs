@@ -12,24 +12,25 @@ namespace GreetingCards
     internal class WeddingCard : GreetingCard
     {
         // Constructor: the recipient must be "<bride> & <groom>".
-        public WeddingCard(string bride, string groom, string sender)
-            : base(bride + " & " + groom, sender)
-        {
+        public WeddingCard(string bride, string groom, string sender): base(bride + " & " + groom, sender)
+        {//empty
         }
 
         // Updates the recipient name.
-        // Note: this is a SECOND SetRecipient with different parameters (overloading).
+        // Note: this is a second SetRecipient with different parameters (overloading).
         public void SetRecipient(string bride, string groom)
         {
-            // TODO
+            if (bride != null && groom != null)
+                base.SetRecipient(bride + " & " + groom);
+            else//for if null put in - we want to have 2 real strings
+                base.SetRecipient("");
         }
 
         // Overrides GreetingCard.GreetingMsg().
         // Required result: "May you live happily ever after"
         protected override string GreetingMsg()
         {
-            // TODO
-            return "";
+            return "May you live happily ever after";
         }
     }
 }
