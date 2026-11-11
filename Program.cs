@@ -10,7 +10,7 @@ namespace GreetingCards
     {
         /// <summary>
         /// Program - the test program for parts A and B.
-        /// Part C note: when you build ManyCards, comment out this Main and uncomment
+        /// Part C note: when building ManyCards, comment out this Main and uncomment
         /// the Main inside ManyCards.cs (only one Main can be active at a time).
         /// </summary>
         /*
