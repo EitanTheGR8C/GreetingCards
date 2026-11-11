@@ -16,15 +16,17 @@ namespace GreetingCards
         // Constructor: recipient and sender go to GreetingCard through base(...).
         public BirthdayCard(string recipient, string sender, int age) : base(recipient, sender)
         {
-            // TODO: store age
+            if(age > 0)//real age
+                this.age = age;
+            else//if not real age than basic will be 0.
+                this.age = 0;
         }
 
         // Overrides GreetingCard.GreetingMsg().
         // Required result: "Happy Birthday! You are <age> today!"
         protected override string GreetingMsg()
         {
-            // TODO
-            return "";
+            return "Happy Birthday! You are " + this.age + " today!";
         }
     }
 }
